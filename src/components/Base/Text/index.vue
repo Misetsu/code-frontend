@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 type Props = {
   content: string
+  // 文字のデザイン
   type: string
   color?: string
 }
@@ -9,6 +10,7 @@ const props = withDefaults(defineProps<Props>(), {
   type: 'p'
 })
 
+// 動的クラス作成
 var typography: String
 switch (props.type) {
   case 'h1':

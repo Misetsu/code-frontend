@@ -5,7 +5,9 @@ import BaseText from '@/components/Base/Text/index.vue'
 type Props = {
   title: string
   content: string
+  // タイトルの位置
   direction: 'top' | 'bottom'
+  // チップの有無
   type: 'simple' | 'chip-card'
   chipContent?: string
   chipColor?: string

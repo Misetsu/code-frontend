@@ -1,10 +1,14 @@
 <script lang="ts" setup>
 type Props = {
+  // チップのスタイル
   variant: 'elevated' | 'flat' | 'outlined' | 'text' | 'plain'
   color?: string
   content?: string
+  // Material Design Icons 参照
   icon?: string
+  // アイコンの位置
   iconDirection?: 'left' | 'right'
+  // サイズ
   size: 'small' | 'medium'
 }
 

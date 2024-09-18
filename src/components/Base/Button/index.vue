@@ -1,12 +1,19 @@
 <script lang="ts" setup>
 type Props = {
+  // ボタンのスタイル
   variant: 'elevated' | 'flat' | 'outlined' | 'text' | 'plain'
+  // primary, secondary, warning, error
   color: string
+  // 押せるかどうか
   disable?: Boolean
   content: string
+  // アイコンの有無
   type: 'button' | 'icon-button'
+  // Material Design Icons 参照
   icon?: string
+  // アイコンの位置
   iconDirection?: 'left' | 'right'
+  // サイズ
   size: 'small' | 'medium'
 }
 
@@ -17,6 +24,7 @@ withDefaults(defineProps<Props>(), {
   size: 'medium'
 })
 
+// マウスイベント
 type Emits = {
   (e: 'click', value: MouseEvent): void
 }
