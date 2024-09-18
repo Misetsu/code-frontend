@@ -5,8 +5,10 @@
   "scripts": {
     "serve": "vite preview",
     "build": "vite build",
-    "lint": "vue-cli-service lint",
-    "dev": "vite"
+    "lint": "eslint . --ext .vue,.ts,.tsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "dev": "vite",
+    "fix": "npm run format && npm run lint",
+    "format": "prettier --write src/"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
